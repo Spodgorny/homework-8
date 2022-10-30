@@ -1,0 +1,111 @@
+.btn {
+    font-family: inherit;
+    color: $container-bg-color;
+    background: $accent-color;
+    font-size: 16px;
+    border-color: transparent;
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: $color-btn-hover;
+}
+
+.btn_modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: $container-bg-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        fill: currentColor;
+    }
+}
+
+.btn-fly {
+    padding: 10px 52px;
+    width: 200px;
+    height: 50px;
+}
+
+.hero_btn {
+    font-family: inherit;
+    color: $container-bg-color;
+    background: $accent-color;
+    font-size: 16px;
+    border-color: transparent;
+    font-weight: 500;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $color-btn-hover;
+    }
+}
+
+.btn-svg {
+    display: flex;
+    align-items: center;
+    padding: 10px 28px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $color-btn-hover;
+    }
+
+    .icon-telega {
+        margin-left: 10px;
+    }
+}
+
+.button_btn-menu {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.62;
+    padding: 6px 22px;
+    color: $primary-text-color;
+    background-color: $button-bg-color;
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+    letter-spacing: .03em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: $accent-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: $container-bg-color;
+    }
+
+    &:focus {
+        background-color: $accent-color;
+        color: $container-bg-color;
+    }
+}
+

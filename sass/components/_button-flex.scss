@@ -1,0 +1,82 @@
+.button-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button_flex-menu:not(:last-child) {
+    margin-right: 8px;   
+}
+
+.button_cards-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.button_cards-link {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.button_img-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.button_img-block {
+    display: block;
+}
+
+.button_img-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 63px 24px;
+    width: 100%;
+    top: 1px;
+    transform: translateY(100%);
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.55;
+    color: $container-bg-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button_border {
+    border: 1px solid $container-border-color;
+    padding: 20px 24px;
+    border-top: none;
+}
+
+.button_project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: $primary-text-color;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.button_stylep {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: .03em;
+    color: $secondary-text-color;
+    margin-top: 0;
+}
+
+.button_link:hover .button_img-text,
+.button_link:focus .button_img-text {
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    opacity: 1;
+} 
