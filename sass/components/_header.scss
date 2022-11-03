@@ -2,6 +2,7 @@
     max-width: 1600px;
     margin: 0 auto;
     border-bottom: 1px solid #ECECEC;
+    display: none;
 
     @media screen and (min-width: 320px) {
         .header_wrap-nav {
@@ -12,6 +13,10 @@
             margin: 0 auto;
             padding-left: 15px;
             padding-right: 15px;
+        }
+
+        .header_wrap {
+            display: flex;
         }
 
         .header_logo {
@@ -48,6 +53,28 @@
     .contacts {
         display: none;
     }
+
+    .mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 48px 40px;
+        transform: translateX(100%);
+        background-color: $secondary-text-color;
+    }
+
+    .mobile__button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    
+        display: inline-flex;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+      }
 }
 
 

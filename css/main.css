@@ -427,6 +427,7 @@ h2 {
   max-width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid #ECECEC;
+  display: none;
 }
 @media screen and (min-width: 320px) {
   .header .header_wrap-nav {
@@ -443,6 +444,11 @@ h2 {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .header .header_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .header .header_logo {
     font-family: "Raleway", sans-serif;
@@ -474,6 +480,28 @@ h2 {
 }
 .header .contacts {
   display: none;
+}
+.header .mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: #757575;
+}
+.header .mobile__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .hero {

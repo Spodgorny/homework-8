@@ -443,6 +443,11 @@ h2 {
     padding-left: 15px;
     padding-right: 15px;
   }
+  .header .header_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header .header_logo {
     font-family: "Raleway", sans-serif;
     color: var(--logo-main-color);
@@ -473,6 +478,17 @@ h2 {
 }
 .header .contacts {
   display: none;
+}
+.header .mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: #757575;
 }
 
 .button-flex {
