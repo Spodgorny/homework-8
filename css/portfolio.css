@@ -422,7 +422,7 @@ h2 {
   color: #fff;
 }
 
-.header {
+.header_wrap {
   max-width: 1600px;
   margin: 0 auto;
   border-bottom: 1px solid #ECECEC;
