@@ -483,6 +483,10 @@ h2 {
   .contacts {
     display: none;
   }
+  .contacts_svg-mail,
+.contacts_svg-tel {
+    margin-right: 10px;
+  }
   .mobile {
     position: fixed;
     top: 0;
@@ -691,7 +695,7 @@ h2 {
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .contacts_icon {
+  .mobile_contacts-icon {
     margin-right: 10px;
     fill: #757575;
   }
