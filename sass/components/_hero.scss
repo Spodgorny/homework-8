@@ -178,7 +178,7 @@
             line-height: 1.71;
             letter-spacing: 0.03em; 
             color: $secondary-text-color;
-            font-size: 14px;
+            font-size: 12px;
         }
     
         &-input {
@@ -193,7 +193,7 @@
     
             &:checked + .form_checkbox-icon {
                 border-color: transparent;
-                background-image: url(../img/icon-check.svg);
+                background-image: url(/img/icon-check.svg);
                 background-size: contain;
                 background-origin: border-box;
                 fill: var(--container-bg-color);
@@ -221,6 +221,11 @@
             text-underline-offset: 0.3em;
             text-decoration: underline;
         }
+    }
+
+    .form_text {
+        height: 120px;
+        margin-bottom: 20px;
     }
 
 }
@@ -356,10 +361,10 @@
 // }
 
 
-.form_text {
-    height: 120px;
-    margin-bottom: 20px;
-}
+// .form_comment-text {
+//     height: 120px;
+//     margin-bottom: 20px;
+// }
 
 // --- BACKDROP -- // 
 
