@@ -224,16 +224,37 @@
             </div>
         </section>
         <section class="section partner">
-            <div class="container">
+            <div class="partner_container">
                 <h2 class="nazv nazv-two">Наша команда</h2>
             <ul class="partner_color">
                 <li class="partner_bg-licolor">
-                    <img class="partner_img-block"
-                    srcset="./img/ihor.jpg 1x, ./img/ihor-2x.jpg 2x" 
-                    src="./img/ihor.jpg" 
-                    alt="ihor" 
-                    width="450"
-                    >
+                    <picture>
+                        <source
+                          srcset="
+                            ./images/team/team-img-1.jpeg    1x,
+                            ./images/team/team-img-1-2x.jpeg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/team/team-img-1-tab.jpeg    1x,
+                            ./images/team/team-img-1-tab-2x.jpeg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="
+                            ./images/team/team-img-1-mob.jpeg    1x,
+                            ./images/team/team-img-1-mob-2x.jpeg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <img
+                          src="./images/team/team-img-1.jpeg"
+                          alt="фото Ігоря Дем'яненка"
+                        />
+                      </picture>
                     <div class="partner_fio">
                         <h3 class="partner_lastname">Ігор Дем'яненко</h3>
                         <p class="partner_work">Product Designer</p>
@@ -400,7 +421,7 @@
             </div>
         </section>
         <section class="section client">
-            <div class="container">
+            <div class="client_container">
                 <h2 class="client_title">Постійні клієнти</h2>
                 <ul class="client_company">
                     <li class="client_company-list">

@@ -2,6 +2,19 @@
     .partner {
         background-color: $button-bg-color;
         text-align: center;
+        padding: 60px 0;
+
+        &_container {
+            width: 480px;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &_color {
+            margin: 0 auto;
+            padding-left: 0;
+        }
 
         &_bg-licolor {
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -76,9 +89,15 @@
         background-color: $button-bg-color;
         text-align: center;
 
+        &_container {
+            width: 768px;
+        }
+
         &_color {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: row;
+            margin: -15px;
         }
 
         &_bg-licolor {
@@ -109,8 +128,13 @@
     
         &_soc-link {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        &_link-list {
+            gap: 15px;
         }
 
         &_link-a {

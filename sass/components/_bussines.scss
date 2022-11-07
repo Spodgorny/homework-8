@@ -4,12 +4,20 @@
     }
 
     .bussines_container {
+        width: 480px;
         margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
     }
 
     .bussines {
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 767px;
+        margin: -15px;
+        padding-left: 0;
 
 
         &_list:not(:last-child) {
@@ -71,12 +79,17 @@
 
     .bussines_container {
         width: 768px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     .bussines {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        justify-content: center;
+        gap: 30px;
         max-width: 768px;
         margin: -15px;
         padding-left: 0;
