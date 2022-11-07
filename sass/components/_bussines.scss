@@ -3,11 +3,16 @@
         padding: 60px 0;
     }
 
-    .bussines {
-        
+    .bussines_container {
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
-        &_list {
-            width: 450px;
+    .bussines {
+
+
+        &_list:not(:last-child) {
             margin-bottom: 30px;
         }
 
@@ -63,13 +68,27 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .bussines_container {
+        width: 768px;
+    }
+
     .bussines {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 768px;
+        margin: -15px;
+        padding-left: 0;
+        list-style: none;
 
         &_list {
-            width: 354px;
-            flex-basis: calc((100% - 6 * 60px)/2);
+            width: calc((100% - 60px)/2);
+        }
+
+
+        &_list:not(:last-child) {
+            margin-bottom: 15px;
         }
 
 
