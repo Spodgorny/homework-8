@@ -156,6 +156,36 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+
+    .section_bussines {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    // .bussines {
+    //     display: flex;
+    //     flex-wrap: nowrap;
+
+    //     &_container {
+    //         width: 1200px;
+    //     }
+
+    //     &_list:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+
+    //     &_list-link {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         width: 270px;
+    //         height: 120px;
+    //         background-color: $button-bg-color;
+    //         margin-bottom: 30px;
+    //     }
+    // }
+}
+
 
 
 
