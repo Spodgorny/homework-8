@@ -79,8 +79,8 @@
 
     .nazv {
         font-size: 28px;
-        margin-left: 130px;
-        text-align: left;
+        margin-left: 0;
+        text-align: center;
     }
 }
 
@@ -167,6 +167,12 @@
         &_link-svg {
             fill: currentColor;
         }
+    }
+
+    .nazv {
+        font-size: 28px;
+        text-align: center;
+        margin-left: 0;
     }
     
 }

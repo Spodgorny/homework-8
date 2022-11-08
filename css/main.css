@@ -1109,6 +1109,7 @@ h2 {
     letter-spacing: 0.06em;
     margin-top: 0;
     width: 696px;
+    margin-top: 200px;
     margin: 0 auto 30px auto;
     font-weight: 900;
   }
@@ -1538,8 +1539,8 @@ h2 {
   }
   .nazv {
     font-size: 28px;
-    margin-left: 130px;
-    text-align: left;
+    margin-left: 0;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1631,6 +1632,11 @@ h2 {
   }
   .partner_link-svg {
     fill: currentColor;
+  }
+  .nazv {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
