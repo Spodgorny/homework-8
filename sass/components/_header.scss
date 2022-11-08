@@ -209,17 +209,22 @@
         color: $accent-color;
     }
 
-    // .current::after {
-    //     display: block;
-    //     content: '';
-    //     width: 100%;
-    //     height: 4px;
-    //     top: 0;
-    //     left: 0;
-    //     background: $accent-color;
-    //     border-radius: 2px;
-    //     margin-top: 28px;
-    // }
+    .header_nav-link.current {
+        color: $color-btn-hover;
+        padding-bottom: 0;
+    }
+
+    .current::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 4px;
+        top: 0;
+        left: 0;
+        background: $accent-color;
+        border-radius: 2px;
+        margin-top: 28px;
+    }
 
     .header_nav {
         display: flex;
