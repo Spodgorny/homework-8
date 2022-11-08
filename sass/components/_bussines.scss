@@ -168,10 +168,6 @@
         flex-direction: row;
         flex-wrap: nowrap;
 
-        &_list:not(:last-child) {
-            display: flex;
-            flex-direction: column;
-        }
 
         &_list-link {
 
