@@ -286,6 +286,12 @@ ul, ol {
   height: auto;
 }
 
+.picture {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -641,18 +647,16 @@ h2 {
   }
   .header_nav-link.current {
     color: #188CE8;
-    padding-bottom: 0;
   }
   .current::after {
     display: block;
+    position: absolute;
     content: "";
     width: 100%;
     height: 4px;
-    top: 0;
-    left: 0;
     background: #2196f3;
     border-radius: 2px;
-    margin-top: 28px;
+    bottom: -1px;
   }
   .header_nav {
     display: -webkit-box;
@@ -666,7 +670,6 @@ h2 {
   }
   .nav-item.current {
     color: #188CE8;
-    padding-bottom: 0;
   }
   .header_nav-item:not(:last-child) {
     margin-right: 50px;
@@ -707,9 +710,6 @@ h2 {
     padding: 0;
     list-style: none;
   }
-  .contacts_item:not(:last-child) {
-    margin-bottom: 10px;
-  }
   .contacts_link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -738,6 +738,11 @@ h2 {
   .contacts_link:hover,
 .contacts_link:focus {
     color: #2196f3;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts_item {
+    margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -799,18 +804,16 @@ h2 {
   }
   .header_nav-link.current {
     color: #188CE8;
-    padding-bottom: 0;
   }
   .current::after {
+    position: absolute;
     display: block;
     content: "";
     width: 100%;
     height: 4px;
-    top: 0;
-    left: 0;
     background: #2196f3;
     border-radius: 2px;
-    margin-top: 28px;
+    bottom: -1px;
   }
 }
 .hero {
@@ -860,7 +863,7 @@ h2 {
   .hero {
     text-align: center;
     padding-top: 118px;
-    padding-bottom: 200px;
+    padding-bottom: 118px;
     max-width: 1600px;
     min-height: 400px;
     margin: 0 auto;
@@ -1097,7 +1100,7 @@ h2 {
   .hero {
     text-align: center;
     padding-top: 118px;
-    padding-bottom: 200px;
+    padding-bottom: 118px;
     max-width: 1600px;
     height: 400px;
     margin: 0 auto;
@@ -1108,7 +1111,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .hero {
     text-align: center;
-    padding-top: 118px;
+    padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
