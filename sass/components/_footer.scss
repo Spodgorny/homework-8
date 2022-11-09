@@ -156,6 +156,7 @@
 
         &_wrap {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
         }
 
@@ -168,9 +169,6 @@
             text-align: center;
         }
 
-        &_col-last {
-            margin: auto;
-        }
     }
 }
 
@@ -204,6 +202,10 @@
 
     .address {
         display: flex;
+
+        &_list {
+            width: 231px;
+        }
     }
 
     .footer_soc-link {
@@ -212,11 +214,6 @@
         &-title {
             text-align: left;
         }
-    }
-
-    .footer_col-last {
-        margin-left: 93px;
-        margin-top: 10px;
     }
 
     .footer_col-title {
