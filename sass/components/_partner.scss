@@ -97,7 +97,7 @@
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            margin: -15px;
+            justify-content: center;
             gap: 30px;
         }
 
@@ -191,8 +191,10 @@
         &_color {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 30px;
         }
+
 
         &_bg-licolor {
             width: calc((100% - 90px)/4);
