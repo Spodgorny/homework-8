@@ -32,12 +32,13 @@
         }
 
         &_logo {
-            text-decoration: none;
-            color: $container-bg-color;
+            display: block;
+            font-size: 26px;
             font-weight: 700;
-            font-size: 24px;
-            line-height: 1.16;
-            font-family: "Raleway",sans-serif;
+            line-height: 1.19;
+            letter-spacing: .03em;
+            color: $container-bg-color;
+            margin-bottom: 20px;
         }
 
         &_logo-color {
@@ -174,6 +175,16 @@
 
 @media screen and (min-width: 1200px) {
 
+    .footer_logo {
+        display: block;
+        font-weight: 700;
+        line-height: 1.19;
+        letter-spacing: .03em;
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
 
     .footer_container {
         display: flex;
@@ -206,6 +217,21 @@
         &_list {
             width: 231px;
         }
+
+        &_link {
+            font-size: 14px;
+            color: $container-bg-color;
+            font-style: normal;
+            letter-spacing: .03em;
+            line-height: 1.71;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                color: $accent-color;
+            }
+
+        }
     }
 
     .footer_soc-link {
@@ -229,10 +255,43 @@
             margin-right: 12px;
             height: 50px;
             width: 358px;
+            color: $container-bg-color;
         }
 
         button {
             margin-top: 0;
+        }
+    }
+
+    .footer_email--two {
+        display: inline-block;
+        color: rgba(255,255,255,.6);
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: .03em;
+        font-size: 14px;
+        padding: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+
+    .footer_tel--two {
+        display: inline-block;
+        color: rgba(255,255,255,.6);
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: .03em;
+        font-size: 14px;
+        padding: 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
         }
     }
 }

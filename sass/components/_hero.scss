@@ -1,6 +1,5 @@
 .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-mobile.jpg);
-    height: 400px;
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
@@ -23,7 +22,6 @@
 
 
     @media screen and (min-width: 1200px) {
-        height: 600px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-img.jpg);
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -40,7 +38,6 @@
         padding-top: 118px;
         padding-bottom: 118px;
         max-width: 1600px;
-        min-height: 400px;
         margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
@@ -260,7 +257,6 @@
         padding-top: 118px;
         padding-bottom: 118px;
         max-width: 1600px;
-        height: 400px;
         margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
@@ -274,7 +270,6 @@
         padding-top: 200px;
         padding-bottom: 200px;
         max-width: 1600px;
-        height: 600px;
         margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
@@ -291,6 +286,28 @@
             margin: 0 auto 30px auto;
             font-weight: 900;
         }
+
+        // &_btn {
+        //     font-family: inherit;
+        //     color: $container-bg-color;
+        //     background: $accent-color;
+        //     font-size: 16px;
+        //     border-color: transparent;
+        //     font-weight: 700;
+        //     line-height: 1.8;
+        //     border-radius: 4px;
+        //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        //     padding: 10px 32px;
+        //     text-align: center;
+        //     letter-spacing: 0.06em;
+        //     cursor: pointer;
+        //     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        //     &:hover,
+        //     &:focus {
+        //     background-color: $color-btn-hover;
+        //     }
+        // }
     }
    
     .backdrop {
