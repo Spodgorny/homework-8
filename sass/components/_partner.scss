@@ -22,7 +22,13 @@
             background: $container-bg-color;
             margin-bottom: 30px;
             width: 450px;
-        }
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        } 
 
         &_fio {
             padding: 30px 30px;
@@ -109,6 +115,12 @@
             width: calc((100% - 30px)/2);
             width: 354px;
             margin-bottom: 0px;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
             
         }
 
@@ -200,6 +212,12 @@
             width: calc((100% - 90px)/4);
             width: 270px;
             margin-bottom: 0px;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
         }
         
         &_work {

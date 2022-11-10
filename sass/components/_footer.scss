@@ -12,9 +12,11 @@
             margin: 0 auto;
         }
 
+
         &_col {
             text-align: center;
             max-width: 480px;
+            margin-bottom: 60px;
 
             &-title {
                 display: block;
@@ -31,6 +33,10 @@
             }
         }
 
+        &_soc {
+            margin-bottom: 60px;
+        }
+
         &_logo {
             display: block;
             font-size: 26px;
@@ -38,7 +44,6 @@
             line-height: 1.19;
             letter-spacing: .03em;
             color: $container-bg-color;
-            margin-bottom: 20px;
         }
 
         &_logo-color {
@@ -150,24 +155,39 @@
 
 @media screen and (min-width: 768px) {
     .footer {
+
+        &_box {
+            display: flex;
+            margin-bottom: 60px;
+            justify-content: center;
+        }
+
+        &_soc {
+            margin: 0;
+            margin-left: 165px;
+        }
+
+        padding: 60px 0;
         
         &_container {
             width: 768px;
         }
 
-        &_wrap {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        &_soc-link {
-            margin: 0;
-            margin-left: 165px;
-        }
 
         &_form {
             text-align: center;
+        }
+
+        &_col-title {
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: .03em;
+            text-transform: uppercase;
+            color: $container-bg-color;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 14px;
         }
 
     }
@@ -189,12 +209,6 @@
     .footer_container {
         display: flex;
         width: 1200px;
-    }
-
-    .footer_wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
     }
 
     .footer_col:not(:last-child) {
