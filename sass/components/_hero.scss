@@ -1,11 +1,11 @@
 .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-mobile.jpg);
     margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg-mobile2x.jpg);
@@ -29,13 +29,80 @@
         }
     } 
 
+    &_btn {
+        display: block;
+        padding: 10px 32px;
+        margin: 0 auto;
+      
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+      
+        background-color: $accent-color;
+        color: $container-bg-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      
+        border-radius: 4px;
+        border: navajowhite;
+        cursor: pointer;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+        background-color: $color-btn-hover;
+        }
+    }
+
 }
 
+.hero_title {
+    max-width: 400px;
+    padding-top: 118px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $container-bg-color;
+  }
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    transition: opacity 300ms linear,visibility 300ms linear;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+}
+
+.modal {
+    position: absolute;
+    padding: 40px;
+    width: 290px;
+    min-height: 560px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 @media screen and (min-width: 320px) {
     .hero {
         text-align: center;
-        padding-top: 118px;
         padding-bottom: 118px;
         max-width: 1600px;
         margin: 0 auto;
@@ -44,9 +111,6 @@
     }
 
     .hero_title {
-        margin: 0 auto;
-        margin-bottom: 30px;
-        width: 450px;
         font-weight: 900;
         font-size: 26px;
         line-height: 1.61;
@@ -82,7 +146,7 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
         width: 450px;
-        height: 609px;
+        min-height: 609px;
         top: 50%;
         left: 50%;
         padding: 40px;
@@ -251,17 +315,17 @@
 
 }
 
-@media screen and (min-width: 768px) {
-    .hero {
-        text-align: center;
-        padding-top: 118px;
-        padding-bottom: 118px;
-        max-width: 1600px;
-        margin: 0 auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .hero {
+//         text-align: center;
+//         padding-top: 118px;
+//         padding-bottom: 118px;
+//         max-width: 1600px;
+//         margin: 0 auto;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+// }
 
 @media screen and (min-width: 1200px) {
 
@@ -281,8 +345,9 @@
             color: $container-bg-color;
             letter-spacing: 0.06em;
             margin-top: 0;
-            width: 696px;
+            max-width: 650px;
             margin-top: 200px;
+            letter-spacing: 0.06em;
             margin: 0 auto 30px auto;
             font-weight: 900;
         }

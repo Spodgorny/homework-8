@@ -77,12 +77,13 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
     .client {
         padding: 94px 0;
 
-        &_container {
-            width: 1200px;
-        }
 
         &_title {
             margin: 0 auto;

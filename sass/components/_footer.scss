@@ -1,3 +1,37 @@
+
+
+.footer_col-last input {
+    width: 100%;
+    height: 50px;
+    padding: 15px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    background: none;
+}
+
+.address {
+    text-align: center;
+    margin-top: 20px;
+    font-style: normal;
+}
+
+.address_list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+
+}
+
+.address_link {
+    text-decoration: none;
+    line-height: 1.71;
+    color: rgba(255,255,255,.6);
+    font-size: 14px;
+}
+
 @media screen and (min-width: 320px) {
     .footer {
         padding-top: 60px;
@@ -6,7 +40,6 @@
 
 
         &_container {
-            width: 480px;
             padding-left: 15px;
             padding-right: 15px;
             margin: 0 auto;
@@ -15,8 +48,8 @@
 
         &_col {
             text-align: center;
-            max-width: 480px;
             margin-bottom: 60px;
+
 
             &-title {
                 display: block;
@@ -26,7 +59,6 @@
                 text-transform: uppercase;
                 color: #fff;
                 margin: 0 auto;
-                margin-top: 60px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 14px;
@@ -99,17 +131,6 @@
             fill: $container-bg-color;
         }
 
-        &_form input {
-            width: 450px;
-            padding: 15px 16px;
-            border: 1px solid rgba(255,255,255,.3);
-            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-            border-radius: 4px;
-            outline: none;
-            background: none;
-            height: 50px;
-        }
-
         &_form button {
             display: flex;
             justify-content: center;
@@ -130,27 +151,27 @@
         }
     }
 
-    .address {
-        margin-top: 20px;
-        font-style: normal;
+    // .address {
+    //     margin-top: 20px;
+    //     font-style: normal;
 
-        &_list {
-            margin: 0;
-            padding-left: 0;
-            list-style: none;
-        }
+    //     &_list {
+    //         margin: 0;
+    //         padding-left: 0;
+    //         list-style: none;
+    //     }
 
-        &_item:not(:last-child) {
-            margin-bottom: 9px;
-        }
+    //     &_item:not(:last-child) {
+    //         margin-bottom: 9px;
+    //     }
 
-        &_link {
-            text-decoration: none;
-            line-height: 1.71;
-            color: rgba(255,255,255,.6);
-            font-size: 14px;
-        }
-    }
+    //     &_link {
+    //         text-decoration: none;
+    //         line-height: 1.71;
+    //         color: rgba(255,255,255,.6);
+    //         font-size: 14px;
+    //     }
+    // }
 }
 
 @media screen and (min-width: 768px) {
@@ -195,6 +216,10 @@
         }
 
     }
+
+
+
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -231,7 +256,7 @@
         text-align: left;
         max-width: 100%;
         margin-bottom: 0;
-        padding-right: 70px;
+        margin-right: 70px;
 
         &_logo {
             font-size: 26px;
@@ -254,7 +279,7 @@
     }
 
     .address {
-        display: flex;
+        text-align: left;
 
         &_list {
             width: 231px;
