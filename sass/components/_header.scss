@@ -23,7 +23,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -192,11 +191,16 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .header-container {
+        width: 768px;
+        display: flex;
+    }
+
     .header_wrap-nav {
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 768px;
+        justify-content: flex-start;
     }
 
     .mobile {
@@ -261,7 +265,7 @@
         text-decoration: none;
         font-weight: 500;
         font-size: 14px;
-        line-height: 1.33;
+        line-height: 1.14;
     
         color: $primary-text-color;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -287,7 +291,9 @@
     }    
 
     .contacts {
-        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         margin: 0;
         margin-left: auto;
         padding: 0;
@@ -343,19 +349,24 @@
 
 @media screen and (min-width:1200px) {
 
-    .container {
+    .header-container {
         width: 1200px;
+        display: flex;
     }
 
     .contacts {
         display: flex;
+        flex-direction: row;
         margin-left: auto;
+
+        &_item:not(:last-child){
+            margin-right: 30px;
+        }
 
         &_link {
             display: flex;
             align-items: center;
             padding-bottom: 32px;
-            margin-right: 30px;
             padding-top: 32px;
         }
 

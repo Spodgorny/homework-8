@@ -5,8 +5,6 @@
 
     .bussines_container {
         margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
         width: 480px;
     }
 
@@ -82,8 +80,6 @@
     .bussines_container {
         width: 768px;
         margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
     }
 
     .bussines {
@@ -163,6 +159,10 @@
     .section_bussines {
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+
+    .bussines_container {
+        width: 1200px;
     }
 
     .bussines {
