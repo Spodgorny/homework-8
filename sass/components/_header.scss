@@ -3,19 +3,51 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: 767px) {
-    .mobile {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 48px 40px;
-        transform: translateX(100%);
-        background-color: $container-bg-color;
-        display: none;
-    }
+.mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $container-bg-color;
+    transform: translateX(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.mobile.is-open {
+    opacity: 0;
+    pointer-events: none;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile.visua
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    padding-top: 64px;
+    padding-left: 0;
+    list-style: none;
+}
+
+// @media screen and (max-width: 767px) {
+//     .mobile {
+//         position: relative;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100vh;
+//         padding: 48px 40px;
+//         transform: translateX(100%);
+//         background-color: $container-bg-color;
+//     } 
+// }
 
 
 @media screen and (min-width: 320px) {
@@ -94,17 +126,11 @@
         background-color: transparent;
     }
     
-    .mobile.is-open {
-        opacity: 1;
-        pointer-events: visible;
-        visibility: visible;
-        transform: translateX(0%);
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+
     
     .mobile_header {
         padding-left: 0;
-        margin: 0 auto;
+        // margin: 0 auto;
         list-style: none;
         margin-bottom: 302px;
     }
@@ -137,7 +163,7 @@
 
     .mobile_contacts {
         padding-left: 0;
-        margin: 0 auto;
+        // margin: 0 auto;
         list-style: none;
         margin-bottom: 64px;
     }
@@ -169,9 +195,9 @@
     }
 
     .social {
-        display: flex;
-        padding-left: 0;
-        margin: 0 auto;
+        margin: 0;
+        // margin-left: auto;
+        padding: 0;
         list-style: none;
     }
     
