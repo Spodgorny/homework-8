@@ -80,3 +80,9 @@
     transform: translateY(0);
     opacity: 1;
 } 
+
+.button_cards-link:hover .button_img-text,
+.button_cards-link:focus .button_img-text {
+  transform: translateY(0);
+}
+

@@ -41,7 +41,6 @@
         align-items: center;
         padding-left: 15px;
         padding-right: 15px;
-        margin: 0 auto;
     }
 
     .header_logo {
@@ -374,6 +373,11 @@
         display: flex;
     }
 
+    .header_nav-link:hover,
+    .header_nav-link:focus {
+        color: $accent-color;
+    }
+
     .contacts {
         display: flex;
         flex-direction: row;
@@ -427,7 +431,6 @@
     .header_wrap-nav {
         display: flex;
         align-items: center;
-        width: auto;
     }
 
     .header_nav-link.current {
@@ -443,6 +446,8 @@
         background: $accent-color;
         border-radius: 2px;
         bottom: -1px;
+
+        
     }
 
 }

@@ -4,7 +4,6 @@
     width: 100%;
     height: 50px;
     padding: 15px 16px;
-    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -26,11 +25,49 @@
 
 }
 
+
+.footer_email--two {
+    display: inline-block;
+    color: rgba(255,255,255,.6);
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: .03em;
+    font-size: 14px;
+    padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer_tel--two {
+    display: inline-block;
+    color: rgba(255,255,255,.6);
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: .03em;
+    font-size: 14px;
+    padding: 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
 .address_link {
     text-decoration: none;
     line-height: 1.71;
-    color: rgba(255,255,255,.6);
+    color: $container-bg-color;
     font-size: 14px;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .btn-svg {
@@ -229,8 +266,6 @@
     .footer_form input {
         width: 450px;
     }
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -309,6 +344,10 @@
                 color: $accent-color;
             }
 
+        }
+
+        &_item:not(:last-child) {
+            margin-bottom: 9px;
         }
     }
 
