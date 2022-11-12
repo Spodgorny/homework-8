@@ -33,6 +33,14 @@
     font-size: 14px;
 }
 
+.btn-svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
 @media screen and (min-width: 320px) {
     .footer {
         padding-top: 60px;
@@ -218,7 +226,9 @@
 
     }
 
-
+    .footer_form input {
+        width: 450px;
+    }
 
 
 }
