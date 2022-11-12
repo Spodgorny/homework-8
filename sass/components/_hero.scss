@@ -89,7 +89,7 @@
 .modal {
     position: relative;
     padding: 40px;
-    width: 300px;
+    width: 350px;
     height: 609px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
@@ -98,6 +98,36 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form_checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: .03em;
+    text-align: center;
+    color: $secondary-text-color;
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+.form_checkbox-input:checked+.form_checkbox-icon {
+    border-color: rgba(0,0,0,0);
+    background-image: url(../img/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    fill: $container-bg-color;
+    background-color: #2196f3;
+    border-color: #2196f3;
 }
 
 
@@ -272,10 +302,10 @@
     
             &:checked + .form_checkbox-icon {
                 border-color: transparent;
-                background-image: url(/img/icon-check.svg);
+                background-image: url(../img/icon-check.svg);
                 background-size: contain;
                 background-origin: border-box;
-                fill: var(--container-bg-color);
+                fill: $container-bg-color;
                 background-color: $accent-color;
                 border-color: $accent-color;
             }
