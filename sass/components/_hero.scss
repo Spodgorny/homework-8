@@ -65,7 +65,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     color: $container-bg-color;
-  }
+}
 
 .backdrop {
     position: fixed;
@@ -194,7 +194,6 @@
     }
 
     .form_hero-title {
-        width: 370px;
         margin-bottom: 30px;
         font-weight: 700;
         line-height: 1.15;
@@ -225,6 +224,7 @@
             border-radius: 4px;
             padding: 12px 16px;
             outline: none;
+            height: 120px;
             transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
             &:focus {
@@ -334,7 +334,6 @@
     }
 
     .form_text {
-        height: 120px;
         margin-bottom: 20px;
     }
 
@@ -422,6 +421,7 @@
 
     .form_hero-title {
         display: block;
+        width: 100%;
         margin-bottom: 12px;
     }
 
@@ -442,7 +442,10 @@
             font-size: 14px;
         }
     }
+
 }
+
+
 
 
 
